@@ -19,7 +19,7 @@
   <h2>1. Resumo</h2>
   <ul>
     <li>Os dados que você informa ficam no seu dispositivo. Não temos servidores e não recebemos os seus dados.</li>
-    <li>Se você optar por conectar uma conta na nuvem, o aplicativo salva arquivos de backup no <strong>seu próprio</strong> armazenamento para que você possa restaurar ou sincronizar seus dados em outros dispositivos: Microsoft OneDrive (Android e Windows) ou Google Drive (Android).</li>
+    <li>Se você optar por conectar uma conta na nuvem, o aplicativo salva arquivos de backup no <strong>seu próprio</strong> armazenamento para que você possa restaurar ou sincronizar seus dados em outros dispositivos: Microsoft OneDrive (Android e Windows) ou Google Drive (Android e Windows).</li>
     <li>Não vendemos, alugamos nem compartilhamos seus dados com ninguém, não exibimos anúncios e não usamos ferramentas de análise ou rastreamento.</li>
   </ul>
 
@@ -49,7 +49,7 @@
     <tr>
       <td>Token de acesso do Google (somente se você conectar o Google Drive)</td>
       <td>Fornecido pelo Google quando você concede o acesso</td>
-      <td>De curta duração; solicitado aos serviços do Google Play sempre que necessário. O aplicativo não guarda senha do Google nem token do Google de longa duração.</td>
+      <td>No Android: de curta duração, solicitado aos serviços do Google Play sempre que necessário; o aplicativo não guarda token do Google de longa duração. No Windows: um token de login do Google é guardado somente no seu dispositivo, no armazenamento privado do aplicativo, criptografado para o seu usuário do Windows, e apagado ao desconectar. O aplicativo nunca guarda a sua senha do Google.</td>
     </tr>
   </table>
   <p>O aplicativo <strong>não</strong> coleta seu nome, telefone, contatos, fotos, localização, identificadores do dispositivo, ID de publicidade, histórico de navegação nem estatísticas de uso, e não lê seus SMS nem suas notificações.</p>
@@ -64,8 +64,8 @@
   <p><strong>O que o aplicativo faz com elas:</strong> cria arquivos de backup (um arquivo JSON por backup, com o nome que você escolher) na pasta dele no seu OneDrive, com os dados descritos na seção 2, e lê e atualiza o backup que você seleciona para manter seus dispositivos sincronizados e permitir que você restaure seus dados. Sincronizar apenas combina seus dados com o backup escolhido; substituir ou excluir um backup exige sua dupla confirmação expressa.</p>
   <p><strong>Uso das informações recebidas da Microsoft:</strong> as informações recebidas pelo Microsoft Graph são usadas somente para oferecer a função de backup e sincronização visível no aplicativo. Não são transferidas a terceiros, exceto quando necessário para oferecer essa função ou cumprir a lei; não são usadas para publicidade; e não são lidas por pessoas, exceto com o seu consentimento expresso, por motivos de segurança ou para cumprir a lei aplicável.</p>
 
-  <h2>4. Conta Google e acesso ao Google Drive (Android)</h2>
-  <p>Conectar o Google Drive é opcional e está disponível no aplicativo para Android. Se você tocar em «Entrar com o Google» em <em>Configurações → Sincronização</em>, o aplicativo solicita uma permissão pelo Google Sign-In (serviços do Google Play):</p>
+  <h2>4. Conta Google e acesso ao Google Drive</h2>
+  <p>Conectar o Google Drive é opcional e está disponível nos aplicativos para Android e Windows. Se você tocar em «Entrar com o Google» em <em>Configurações → Sincronização</em>, o aplicativo solicita uma permissão: no Android pelo Google Sign-In (serviços do Google Play) e no Windows no seu navegador, pela página padrão de login do Google:</p>
   <ul>
     <li><code>https://www.googleapis.com/auth/drive.appdata</code> — ler e gravar arquivos na pasta de dados oculta própria do aplicativo no seu Google Drive. O aplicativo <strong>não pode</strong> ver, listar, ler nem modificar nenhum dos seus outros arquivos ou pastas do Drive. O e-mail exibido no aplicativo é obtido com essa mesma permissão.</li>
   </ul>

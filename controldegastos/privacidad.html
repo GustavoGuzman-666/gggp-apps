@@ -19,7 +19,7 @@
   <h2>1. Summary</h2>
   <ul>
     <li>The data you enter stays on your device. We run no servers and we do not receive your data.</li>
-    <li>If you choose to connect a cloud account, the app saves backup files in <strong>your own</strong> cloud storage so you can restore or sync your data on your other devices: Microsoft OneDrive (Android and Windows) or Google Drive (Android).</li>
+    <li>If you choose to connect a cloud account, the app saves backup files in <strong>your own</strong> cloud storage so you can restore or sync your data on your other devices: Microsoft OneDrive (Android and Windows) or Google Drive (Android and Windows).</li>
     <li>We do not sell, rent or share your data with anyone, we show no ads, and we use no analytics or tracking tools.</li>
   </ul>
 
@@ -49,7 +49,7 @@
     <tr>
       <td>Google access token (only if you connect Google Drive)</td>
       <td>Provided by Google when you grant access</td>
-      <td>Short-lived; requested from Google Play services whenever it is needed. The app does not keep a Google password or a long-lived Google token.</td>
+      <td>On Android: short-lived, requested from Google Play services whenever it is needed; the app keeps no long-lived Google token. On Windows: a Google sign-in token is kept on your device only, in the app's private storage encrypted for your Windows user, and deleted when you disconnect. The app never keeps your Google password.</td>
     </tr>
   </table>
   <p>The app does <strong>not</strong> collect your name, phone number, contacts, photos, location, device identifiers, advertising ID, browsing history or usage statistics, and it does not read your SMS or notifications.</p>
@@ -64,8 +64,8 @@
   <p><strong>What the app does with them:</strong> it creates backup files (one JSON file per backup, named as you choose) in its folder in your OneDrive, containing the data described in section 2, and it reads and updates the backup you select to keep your devices in sync and to let you restore your data. Syncing only combines your data with the selected backup; replacing or deleting a backup requires your explicit double confirmation.</p>
   <p><strong>Use of information received from Microsoft:</strong> information received through Microsoft Graph is used only to provide the backup and sync feature that is visible in the app. It is not transferred to third parties except as necessary to provide that feature or to comply with law; it is not used for advertising; and it is not read by humans, except with your explicit consent, for security purposes, or to comply with applicable law.</p>
 
-  <h2>4. Google account and Google Drive access (Android)</h2>
-  <p>Connecting Google Drive is optional and available in the Android app. If you tap "Connect with Google" in <em>Settings → Sync</em>, the app asks for one permission through Google Sign-In (Google Play services):</p>
+  <h2>4. Google account and Google Drive access</h2>
+  <p>Connecting Google Drive is optional and available in the Android and Windows apps. If you tap "Connect with Google" in <em>Settings → Sync</em>, the app asks for one permission: on Android through Google Sign-In (Google Play services), on Windows in your web browser through Google's standard sign-in page:</p>
   <ul>
     <li><code>https://www.googleapis.com/auth/drive.appdata</code> — read and write files in the app's own hidden data folder in your Google Drive. The app <strong>cannot</strong> see, list, read or modify any of your other Drive files or folders. The email address shown in the app is obtained with this same permission.</li>
   </ul>

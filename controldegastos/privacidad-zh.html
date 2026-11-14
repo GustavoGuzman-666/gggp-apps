@@ -19,7 +19,7 @@
   <h2>1. 概要</h2>
   <ul>
     <li>你输入的数据保存在你的设备上。我们没有服务器，也不会收到你的数据。</li>
-    <li>如果你选择连接云账号，本应用会把备份文件保存到<strong>你自己的</strong>云存储中，方便你在其他设备上恢复或同步数据：Microsoft OneDrive（Android 和 Windows）或 Google Drive（Android）。</li>
+    <li>如果你选择连接云账号，本应用会把备份文件保存到<strong>你自己的</strong>云存储中，方便你在其他设备上恢复或同步数据：Microsoft OneDrive（Android 和 Windows）或 Google Drive（Android 和 Windows）。</li>
     <li>我们不会出售、出租或与任何人共享你的数据，不显示广告，也不使用任何统计分析或跟踪工具。</li>
   </ul>
 
@@ -49,7 +49,7 @@
     <tr>
       <td>Google 访问令牌（仅在你连接 Google Drive 时）</td>
       <td>你授权访问时由 Google 提供</td>
-      <td>有效期很短；需要时向 Google Play 服务申请。本应用不保存 Google 密码，也不保存长期有效的 Google 令牌。</td>
+      <td>在 Android 上：有效期很短，需要时向 Google Play 服务申请；本应用不保存长期有效的 Google 令牌。在 Windows 上：Google 登录令牌仅保存在你的设备上，存放于应用的私有存储中并针对你的 Windows 用户加密，断开连接时删除。本应用从不保存你的 Google 密码。</td>
     </tr>
   </table>
   <p>本应用<strong>不会</strong>收集你的姓名、电话号码、联系人、照片、位置、设备标识符、广告 ID、浏览记录或使用统计，也不会读取你的短信或通知。</p>
@@ -64,8 +64,8 @@
   <p><strong>本应用如何使用这些权限：</strong>在你 OneDrive 的专属文件夹中创建备份文件（每个备份一个 JSON 文件，名称由你决定），内容为第 2 节所述数据；并读取和更新你选定的备份，以保持各设备同步并让你恢复数据。同步只是把你的数据与所选备份合并；替换或删除备份需要你明确地二次确认。</p>
   <p><strong>对从 Microsoft 获得的信息的使用：</strong>通过 Microsoft Graph 获得的信息仅用于提供应用中可见的备份与同步功能。除非为提供该功能或遵守法律所必需，否则不会转让给第三方；不会用于广告；除非经你明确同意、出于安全目的或为遵守适用法律，否则不会被人工查看。</p>
 
-  <h2>4. Google 账号与 Google Drive 访问（Android）</h2>
-  <p>连接 Google Drive 是可选的，仅在 Android 应用中提供。如果你在<em>设置 → 同步</em>中点击“使用 Google 登录”，本应用会通过 Google 登录（Google Play 服务）请求一项权限：</p>
+  <h2>4. Google 账号与 Google Drive 访问</h2>
+  <p>连接 Google Drive 是可选的，在 Android 和 Windows 应用中提供。如果你在<em>设置 → 同步</em>中点击“使用 Google 登录”，本应用会请求一项权限：在 Android 上通过 Google 登录（Google Play 服务），在 Windows 上通过浏览器中的 Google 标准登录页面：</p>
   <ul>
     <li><code>https://www.googleapis.com/auth/drive.appdata</code> —— 读取和写入你 Google Drive 中本应用专属的隐藏数据文件夹里的文件。本应用<strong>无法</strong>查看、列出、读取或修改你 Drive 中的任何其他文件或文件夹。应用中显示的电子邮箱也是通过这项权限获得的。</li>
   </ul>

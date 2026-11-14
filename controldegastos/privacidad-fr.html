@@ -19,7 +19,7 @@
   <h2>1. Résumé</h2>
   <ul>
     <li>Les données que vous saisissez restent sur votre appareil. Nous n'avons aucun serveur et nous ne recevons pas vos données.</li>
-    <li>Si vous choisissez de connecter un compte cloud, l'application enregistre des fichiers de sauvegarde dans <strong>votre propre</strong> espace de stockage afin de restaurer ou synchroniser vos données sur vos autres appareils : Microsoft OneDrive (Android et Windows) ou Google Drive (Android).</li>
+    <li>Si vous choisissez de connecter un compte cloud, l'application enregistre des fichiers de sauvegarde dans <strong>votre propre</strong> espace de stockage afin de restaurer ou synchroniser vos données sur vos autres appareils : Microsoft OneDrive (Android et Windows) ou Google Drive (Android et Windows).</li>
     <li>Nous ne vendons, ne louons et ne partageons vos données avec personne, nous n'affichons aucune publicité et nous n'utilisons aucun outil d'analyse ou de suivi.</li>
   </ul>
 
@@ -49,7 +49,7 @@
     <tr>
       <td>Jeton d'accès Google (uniquement si vous connectez Google Drive)</td>
       <td>Fourni par Google lorsque vous accordez l'accès</td>
-      <td>De courte durée ; demandé aux services Google Play chaque fois que nécessaire. L'application ne conserve ni mot de passe Google ni jeton Google de longue durée.</td>
+      <td>Sur Android : de courte durée, demandé aux services Google Play chaque fois que nécessaire ; l'application ne conserve aucun jeton Google de longue durée. Sous Windows : un jeton de connexion Google est conservé uniquement sur votre appareil, dans le stockage privé de l'application, chiffré pour votre utilisateur Windows, et supprimé à la déconnexion. L'application ne conserve jamais votre mot de passe Google.</td>
     </tr>
   </table>
   <p>L'application ne collecte <strong>pas</strong> votre nom, numéro de téléphone, contacts, photos, position, identifiants d'appareil, identifiant publicitaire, historique de navigation ni statistiques d'utilisation, et ne lit ni vos SMS ni vos notifications.</p>
@@ -64,8 +64,8 @@
   <p><strong>Ce que l'application en fait :</strong> elle crée des fichiers de sauvegarde (un fichier JSON par sauvegarde, au nom de votre choix) dans son dossier de votre OneDrive, contenant les données décrites à la section 2, et lit et met à jour la sauvegarde que vous sélectionnez pour garder vos appareils synchronisés et vous permettre de restaurer vos données. La synchronisation se contente de fusionner vos données avec la sauvegarde choisie ; remplacer ou supprimer une sauvegarde exige votre double confirmation explicite.</p>
   <p><strong>Utilisation des informations reçues de Microsoft :</strong> les informations reçues via Microsoft Graph servent uniquement à fournir la fonction de sauvegarde et de synchronisation visible dans l'application. Elles ne sont pas transférées à des tiers, sauf si nécessaire pour fournir cette fonction ou respecter la loi ; elles ne sont pas utilisées à des fins publicitaires ; et elles ne sont pas lues par des personnes, sauf avec votre consentement explicite, pour des raisons de sécurité ou pour respecter la loi applicable.</p>
 
-  <h2>4. Compte Google et accès à Google Drive (Android)</h2>
-  <p>La connexion à Google Drive est facultative et disponible dans l'application Android. Si vous touchez « Se connecter avec Google » dans <em>Réglages → Synchronisation</em>, l'application demande une autorisation via Google Sign-In (services Google Play) :</p>
+  <h2>4. Compte Google et accès à Google Drive</h2>
+  <p>La connexion à Google Drive est facultative et disponible dans les applications Android et Windows. Si vous touchez « Se connecter avec Google » dans <em>Réglages → Synchronisation</em>, l'application demande une autorisation : sur Android via Google Sign-In (services Google Play), sur Windows dans votre navigateur via la page de connexion standard de Google :</p>
   <ul>
     <li><code>https://www.googleapis.com/auth/drive.appdata</code> — lire et écrire des fichiers dans le dossier de données masqué propre à l'application dans votre Google Drive. L'application <strong>ne peut pas</strong> voir, lister, lire ni modifier vos autres fichiers ou dossiers Drive. L'adresse e-mail affichée dans l'application est obtenue avec cette même autorisation.</li>
   </ul>
