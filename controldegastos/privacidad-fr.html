@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité - Control de Gastos</title>
+<link rel="stylesheet" href="privacidad.css">
+</head>
+<body>
+<main>
+  <p><a href="index.html">&larr; Control de Gastos</a></p>
+  <nav class="langs"><a href="privacidad.html">English</a> · <a href="privacidad-es.html">Español</a> · Français · <a href="privacidad-pt.html">Português</a> · <a href="privacidad-zh.html">中文</a> · <a href="privacidad-hi.html">हिन्दी</a> · <a href="privacidad-ru.html">Русский</a></nav>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="muted">Application : <strong>Control de Gastos</strong> (Android et Windows) · Dernière mise à jour : 13 novembre 2026</p>
+
+  <p>Cette politique de confidentialité explique quelles informations les applications Control de Gastos pour Android et Windows (« l'application », « nous ») traitent, comment elles sont utilisées, où elles sont stockées, avec qui elles sont partagées et comment vous pouvez les supprimer. Control de Gastos est un outil de finances personnelles qui vous aide à suivre vos achats en plusieurs fois, vos dépenses fixes mensuelles et la somme que doit chaque personne. L'application est développée et maintenue par un développeur indépendant, joignable à <a href="mailto:gggp.controldegastos@gmail.com">gggp.controldegastos@gmail.com</a>.</p>
+
+  <h2>1. Résumé</h2>
+  <ul>
+    <li>Les données que vous saisissez restent sur votre appareil. Nous n'avons aucun serveur et nous ne recevons pas vos données.</li>
+    <li>Si vous choisissez de connecter un compte cloud, l'application enregistre des fichiers de sauvegarde dans <strong>votre propre</strong> espace de stockage afin de restaurer ou synchroniser vos données sur vos autres appareils : Microsoft OneDrive (Android et Windows) ou Google Drive (Android).</li>
+    <li>Nous ne vendons, ne louons et ne partageons vos données avec personne, nous n'affichons aucune publicité et nous n'utilisons aucun outil d'analyse ou de suivi.</li>
+  </ul>
+
+  <h2>2. Informations traitées par l'application</h2>
+  <table>
+    <tr><th>Donnée</th><th>Origine</th><th>Lieu de stockage</th></tr>
+    <tr>
+      <td>Saisies financières : achats en plusieurs fois (article, montant, date du premier prélèvement, nombre d'échéances, carte ou enseigne, titulaire), dépenses fixes (article, montant, personne, commerce), achats en devise étrangère et taux de change, salaire et réglages de l'application</td>
+      <td>Saisies par vous dans l'application</td>
+      <td>Sur votre appareil, dans le stockage privé de l'application. Si vous connectez OneDrive ou Google Drive, aussi dans des fichiers de sauvegarde de votre propre compte cloud.</td>
+    </tr>
+    <tr>
+      <td>Noms des personnes, cartes/enseignes et commerces (les « listes »)</td>
+      <td>Saisis par vous dans l'application</td>
+      <td>Comme ci-dessus</td>
+    </tr>
+    <tr>
+      <td>Adresse e-mail du compte Microsoft ou Google connecté (uniquement si vous en connectez un)</td>
+      <td>Fournie par Microsoft ou Google lorsque vous accordez l'accès</td>
+      <td>Uniquement sur votre appareil, pour afficher le compte connecté</td>
+    </tr>
+    <tr>
+      <td>Jeton de connexion Microsoft (uniquement si vous connectez OneDrive)</td>
+      <td>Fourni par Microsoft lorsque vous vous connectez</td>
+      <td>Uniquement sur votre appareil, dans le stockage privé de l'application (sous Windows, chiffré pour votre utilisateur Windows), afin de ne pas vous reconnecter à chaque fois. Il est supprimé à la déconnexion.</td>
+    </tr>
+    <tr>
+      <td>Jeton d'accès Google (uniquement si vous connectez Google Drive)</td>
+      <td>Fourni par Google lorsque vous accordez l'accès</td>
+      <td>De courte durée ; demandé aux services Google Play chaque fois que nécessaire. L'application ne conserve ni mot de passe Google ni jeton Google de longue durée.</td>
+    </tr>
+  </table>
+  <p>L'application ne collecte <strong>pas</strong> votre nom, numéro de téléphone, contacts, photos, position, identifiants d'appareil, identifiant publicitaire, historique de navigation ni statistiques d'utilisation, et ne lit ni vos SMS ni vos notifications.</p>
+
+  <h2>3. Compte Microsoft et accès à OneDrive</h2>
+  <p>La connexion à OneDrive est facultative. Si vous touchez « Se connecter avec Microsoft » dans <em>Réglages → Synchronisation</em>, l'application demande ces autorisations via la plateforme d'identité Microsoft :</p>
+  <ul>
+    <li><code>Files.ReadWrite.AppFolder</code> — lire et écrire des fichiers dans le dossier propre à l'application de votre OneDrive (dossier <em>Applications</em>). L'application <strong>ne peut pas</strong> voir, lister, lire ni modifier vos autres fichiers ou dossiers.</li>
+    <li><code>User.Read</code> — lire votre profil de base (votre adresse e-mail) pour afficher le compte connecté.</li>
+    <li><code>offline_access</code> — vous garder connecté sans redemander votre mot de passe à chaque fois.</li>
+  </ul>
+  <p><strong>Ce que l'application en fait :</strong> elle crée des fichiers de sauvegarde (un fichier JSON par sauvegarde, au nom de votre choix) dans son dossier de votre OneDrive, contenant les données décrites à la section 2, et lit et met à jour la sauvegarde que vous sélectionnez pour garder vos appareils synchronisés et vous permettre de restaurer vos données. La synchronisation se contente de fusionner vos données avec la sauvegarde choisie ; remplacer ou supprimer une sauvegarde exige votre double confirmation explicite.</p>
+  <p><strong>Utilisation des informations reçues de Microsoft :</strong> les informations reçues via Microsoft Graph servent uniquement à fournir la fonction de sauvegarde et de synchronisation visible dans l'application. Elles ne sont pas transférées à des tiers, sauf si nécessaire pour fournir cette fonction ou respecter la loi ; elles ne sont pas utilisées à des fins publicitaires ; et elles ne sont pas lues par des personnes, sauf avec votre consentement explicite, pour des raisons de sécurité ou pour respecter la loi applicable.</p>
+
+  <h2>4. Compte Google et accès à Google Drive (Android)</h2>
+  <p>La connexion à Google Drive est facultative et disponible dans l'application Android. Si vous touchez « Se connecter avec Google » dans <em>Réglages → Synchronisation</em>, l'application demande une autorisation via Google Sign-In (services Google Play) :</p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/drive.appdata</code> — lire et écrire des fichiers dans le dossier de données masqué propre à l'application dans votre Google Drive. L'application <strong>ne peut pas</strong> voir, lister, lire ni modifier vos autres fichiers ou dossiers Drive. L'adresse e-mail affichée dans l'application est obtenue avec cette même autorisation.</li>
+  </ul>
+  <p><strong>Ce que l'application en fait :</strong> elle crée des fichiers de sauvegarde (un fichier JSON par sauvegarde, au nom de votre choix) dans ce dossier masqué, contenant les données décrites à la section 2, et lit et met à jour la sauvegarde que vous sélectionnez pour garder vos appareils synchronisés et vous permettre de restaurer vos données. La synchronisation se contente de fusionner vos données avec la sauvegarde choisie ; remplacer ou supprimer une sauvegarde exige votre double confirmation explicite. Le dossier masqué n'apparaît pas dans la liste habituelle des fichiers de Google Drive.</p>
+  <p><strong>Règles relatives aux données utilisateur des services d'API Google :</strong> l'utilisation par Control de Gastos des informations reçues des API Google, et leur transfert à toute autre application, respectera les <a href="https://developers.google.com/terms/api-services-user-data-policy">Règles relatives aux données utilisateur des services d'API Google</a>, y compris les exigences d'utilisation limitée. En particulier, les informations reçues de Google servent uniquement à fournir la fonction de sauvegarde et de synchronisation visible dans l'application ; elles ne sont pas transférées à des tiers, sauf si nécessaire pour fournir cette fonction, pour des raisons de sécurité ou pour respecter la loi ; elles ne sont pas utilisées à des fins publicitaires, y compris le reciblage ou la publicité basée sur les centres d'intérêt ; elles ne servent pas à développer, améliorer ou entraîner des modèles d'apprentissage automatique généralistes ; et elles ne sont pas lues par des personnes, sauf avec votre consentement explicite, pour des raisons de sécurité ou pour respecter la loi applicable.</p>
+
+  <h2>5. Comment nous utilisons les informations</h2>
+  <ul>
+    <li>Pour calculer et afficher votre résumé mensuel, vos échéances, vos dépenses fixes, le montant par personne et votre solde.</li>
+    <li>Pour enregistrer vos données sur votre appareil entre deux utilisations.</li>
+    <li>Si vous connectez OneDrive ou Google Drive : pour sauvegarder vos données et les synchroniser entre vos appareils en fusionnant les modifications faites sur chacun.</li>
+  </ul>
+  <p>Nous n'utilisons pas vos informations à d'autres fins, telles que la publicité, le profilage, les décisions de crédit ou l'entraînement de modèles d'apprentissage automatique.</p>
+
+  <h2>6. Partage et divulgation</h2>
+  <p>Nous ne partageons, ne vendons, ne louons ni ne divulguons vos informations à des tiers. L'application n'effectue que trois types de communications réseau, toujours en HTTPS : (1) avec Microsoft (connexion et service Microsoft Graph / OneDrive), uniquement si vous avez connecté votre compte Microsoft ; (2) avec Google (Google Sign-In et API Google Drive), uniquement si vous avez connecté votre compte Google ; et (3) avec le service gratuit de taux de change open.er-api.com, uniquement lorsque vous touchez « Mettre à jour depuis Internet » dans l'onglet Devises. Cette dernière requête ne demande que les taux du dollar, de l'euro et de la livre : elle n'envoie ni vos données, ni votre nom, ni d'identifiants, bien que, comme pour toute connexion Internet, le service puisse voir l'adresse IP depuis laquelle il est contacté. Vos données dans OneDrive ou Google Drive sont soumises à la déclaration de confidentialité et aux mesures de sécurité de Microsoft ou de Google. Nous ne pourrions divulguer des informations que si la loi l'exige.</p>
+
+  <h2>7. Stockage, sécurité et conservation</h2>
+  <ul>
+    <li><strong>Sur votre appareil :</strong> les données sont conservées dans le stockage privé de l'application, que le système d'exploitation isole des autres applications. Protégez votre appareil par un verrouillage d'écran.</li>
+    <li><strong>Dans OneDrive ou Google Drive :</strong> les fichiers de sauvegarde se trouvent dans votre propre compte et sont protégés par la sécurité de votre compte Microsoft ou Google.</li>
+    <li><strong>Conservation :</strong> vos données sont conservées jusqu'à ce que vous les supprimiez. Le développeur n'en garde aucune copie, puisque les données ne lui parviennent jamais.</li>
+  </ul>
+
+  <h2>8. Vos choix et comment supprimer vos données</h2>
+  <ul>
+    <li><strong>Modifier ou supprimer des saisies :</strong> vous pouvez modifier ou supprimer tout achat, dépense, personne, carte ou commerce dans l'application.</li>
+    <li><strong>Arrêter la synchronisation :</strong> dans l'application, allez dans <em>Réglages → Synchronisation → Déconnecter</em>. Cela retire la connexion de l'appareil.</li>
+    <li><strong>Supprimer vos données dans le cloud :</strong> supprimez les sauvegardes depuis <em>Réglages → Sauvegardes → Supprimer la sauvegarde</em> dans l'application. Vous pouvez aussi les supprimer du dossier de l'application dans votre OneDrive, ou dans Google Drive via <em>Paramètres → Gérer les applications → Control de Gastos → Supprimer les données masquées de l'application</em>.</li>
+    <li><strong>Révoquer l'accès :</strong> pour Microsoft, sur <a href="https://account.live.com/consent/Manage">account.live.com/consent/Manage</a> (comptes personnels) ou <a href="https://myapps.microsoft.com">myapps.microsoft.com</a> (comptes professionnels ou scolaires) ; pour Google, sur <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li><strong>Supprimer les données locales :</strong> désinstallez l'application ou effacez son stockage dans les réglages du système.</li>
+  </ul>
+  <p>Comme le développeur ne détient pas vos données, les supprimer par les étapes ci-dessus les efface complètement. Pour toute demande concernant vos données, vous pouvez aussi écrire à <a href="mailto:gggp.controldegastos@gmail.com">gggp.controldegastos@gmail.com</a>.</p>
+
+  <h2>9. Enfants</h2>
+  <p>L'application ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment d'informations personnelles les concernant.</p>
+
+  <h2>10. Modifications de cette politique</h2>
+  <p>Si cette politique change, la nouvelle version sera publiée à cette adresse avec une date mise à jour. Si les changements affectent l'utilisation des informations reçues de Microsoft ou de Google, l'application ne les appliquera pas aux données déjà fournies sans redemander votre consentement.</p>
+
+  <h2>11. Contact</h2>
+  <p>Questions sur cette politique ou sur vos données : <a href="mailto:gggp.controldegastos@gmail.com">gggp.controldegastos@gmail.com</a>.</p>
+</main>
+</body>
+</html>
