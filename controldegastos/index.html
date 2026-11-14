@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Control de Gastos</title>
+<meta name="description" content="Control de Gastos: app Android para llevar tus cuotas, gastos fijos y pagos por persona.">
+<style>
+  :root { --bg:#f6f8f6; --fg:#16241a; --muted:#52645a; --card:#ffffff; --accent:#2e7d32; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0f1a12; --fg:#e6efe8; --muted:#9db0a3; --card:#16241a; --accent:#81c784; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, "Segoe UI", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:32px 20px 48px; }
+  header { display:flex; align-items:center; gap:16px; margin-bottom:24px; }
+  header img { width:72px; height:72px; border-radius:16px; }
+  h1 { margin:0; font-size:1.8rem; }
+  h2 { margin-top:2rem; font-size:1.2rem; color:var(--accent); }
+  .tag { margin:0; color:var(--muted); }
+  ul { padding-left:1.2rem; }
+  a { color:var(--accent); }
+  .card { background:var(--card); border-radius:12px; padding:16px 20px; }
+  footer { margin-top:2.5rem; color:var(--muted); font-size:.9rem; }
+  hr { border:none; border-top:1px solid var(--muted); opacity:.3; margin:2.5rem 0; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="logo.png" alt="Logo de Control de Gastos">
+    <div>
+      <h1>Control de Gastos</h1>
+      <p class="tag">Tus cuotas, gastos fijos y pagos por persona en un solo lugar.</p>
+    </div>
+  </header>
+
+  <section id="es">
+    <h2>Qué es</h2>
+    <p>Control de Gastos es una app para Android y Windows que reemplaza una planilla de Excel: te muestra cuánto debes pagar cada mes por tus compras en cuotas y tus gastos fijos, y cuánto corresponde a cada persona.</p>
+
+    <h2>Qué puedes hacer</h2>
+    <ul>
+      <li>Registrar compras en cuotas y ver en qué cuota vas, cuántas faltan y cuándo termina cada una.</li>
+      <li>Ver las cuotas ya pagadas y filtrar u ordenar por persona, tarjeta o monto.</li>
+      <li>Llevar gastos fijos mensuales agrupados por comercio.</li>
+      <li>Convertir cargos en dólares, euros o libras a pesos.</li>
+      <li>Ver el resumen del mes, el pago por persona y el balance.</li>
+      <li>Opcionalmente, respaldar y sincronizar tus datos en tu propio OneDrive.</li>
+    </ul>
+
+    <h2>Tus datos</h2>
+    <p>Tus datos se guardan en tu teléfono. Si decides conectar OneDrive, se guardan además en un archivo dentro de tu propio OneDrive. No se envían a ningún otro servidor ni a terceros. Más detalles en la <a href="privacidad-es.html">Política de privacidad</a>.</p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h2>What it is</h2>
+    <p>Control de Gastos is an Android and Windows app that replaces a spreadsheet: it shows how much you have to pay each month for your installment purchases and fixed expenses, and how much belongs to each person.</p>
+
+    <h2>What you can do</h2>
+    <ul>
+      <li>Track installment purchases: current installment, remaining installments and end date.</li>
+      <li>Review paid-off purchases and filter or sort by person, card or amount.</li>
+      <li>Keep monthly fixed expenses grouped by merchant.</li>
+      <li>Convert charges in USD, EUR or GBP to local currency.</li>
+      <li>See the monthly summary, the amount per person and the balance.</li>
+      <li>Optionally back up and sync your data to your own OneDrive.</li>
+    </ul>
+
+    <h2>Your data</h2>
+    <p>Your data is stored on your phone. If you choose to connect OneDrive, it is also stored as a file in your own OneDrive. It is not sent to any other server or third party. See the <a href="privacidad.html">Privacy Policy</a>.</p>
+  </section>
+
+  <footer>
+    <a href="privacidad-es.html">Política de privacidad</a> · <a href="privacidad.html">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
